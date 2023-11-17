@@ -1,19 +1,10 @@
 <template>
-  <main class="container bg-sherlock">
+  <div class="container bg-lockwood">
 
     <!--NAVBAR-->
-    <section class="nav-container bg-black">
+    <nav class="nav-container fixed">
       <NavbarOptions></NavbarOptions>
-    </section>
-
-    <!---MOVIES GENRE PANEL-->
-    <section class="movies h-[100px] w-[100%]">
-      <h1 class="text-[35px] font-semibold ml-[50px]">Series</h1>
-      <SelectOptionsVue></SelectOptionsVue>
-
-      <!--GRID & LINE BUTTONS-->
-      <ButtonsCompose></ButtonsCompose>
-    </section>
+    </nav>
 
     <!--NOTIFICATIONS-->
     <Notifications v-if="showNotifications"></Notifications>
@@ -23,23 +14,22 @@
 
 
     <!--PRINCIPAL BANNER-->
-    <article class="serie-container">
+    <div class="serie-container">
       <BannerCompose></BannerCompose>
-    </article>
+    </div>
 
     <!--CARROUSELS-->
     <Carrousel></Carrousel>
 
-  </main>
+  </div>
 </template>
 
 <script>
 import Carrousel from '@/components/CarrouselCompose.vue'
 import UserPanel from '@/components/UserPanelCompose.vue'
 import Notifications from '@/components/NotificationCompose.vue'
-import NavbarOptions from '@/components/NavbarOptions.vue'
-import ButtonsCompose from '@/components/ButtonsCompose.vue'
-import BannerCompose from '@/components/BannerCompose.vue'
+import BannerCompose from './BannerCompose.vue'
+import NavbarOptions from './NavbarOptions.vue'
 
 export default {
   data() {
@@ -53,9 +43,10 @@ export default {
     Carrousel,
     UserPanel,
     Notifications,
-    NavbarOptions,
-    ButtonsCompose,
-    BannerCompose
+    BannerCompose,
+    NavbarOptions
+},
+  methods: {
   }
 }
 </script>
@@ -118,11 +109,5 @@ export default {
 .deploy-leave-to {
   transform: translateX(-10px);
   opacity: 0;
-}
-
-
-/*SERIES*/
-.serie-logo {
-  filter: invert(1);
 }
 </style>

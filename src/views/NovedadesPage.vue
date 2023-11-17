@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import Carrousel from '@/components/customCarrousel.vue'
-import UserPanel from '@/components/UserPanelCompose.vue.js'
-import Notifications from '@/components/NotificationsCompose.vue.js'
+import Carrousel from '@/components/CarrouselCompose.vue'
+import UserPanel from '@/components/UserPanelCompose.vue'
+import Notifications from '@/components/NotificationCompose.vue'
 import NavbarOptionsVue from '@/components/NavbarOptions.vue'
 
 export default {

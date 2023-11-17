@@ -23,7 +23,7 @@
 
 
     <!--PRINCIPAL BANNER-->
-    <BannerComposeVue></BannerComposeVue>
+    <BannerCompose></BannerCompose>
     <BannerButtons></BannerButtons>
 
     <!--CARROUSELS-->
@@ -33,12 +33,13 @@
 </template>
 
 <script>
-import Carrousel from '@/components/customCarrousel.vue'
-import UserPanel from '@/components/UserPanelCompose.vue.js'
-import Notifications from '@/components/NotificationsCompose.vue.js'
+import Carrousel from '@/components/CarrouselCompose.vue'
+import UserPanel from '@/components/UserPanelCompose.vue'
+import Notifications from '@/components/NotificationCompose.vue'
 import NavbarOptions from '@/components/NavbarOptions.vue'
 import SelectOptions from '@/components/SelectOptions.vue'
 import ButtonsCompose from '@/components/ButtonsCompose.vue'
+import BannerCompose from '@/components/BannerCompose.vue'
 
 export default {
   data() {
@@ -54,7 +55,8 @@ export default {
     Notifications,
     NavbarOptions,
     SelectOptions,
-    ButtonsCompose
+    ButtonsCompose,
+    BannerCompose
 },
   methods: {
   }

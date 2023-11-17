@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Nav from '@/components/customNavbar.vue'
+import Nav from '@/components/NavbarCompose.vue'
 
 export default{
     data(){
