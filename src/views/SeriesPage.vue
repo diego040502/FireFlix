@@ -41,8 +41,8 @@
 
 <script>
 import Carrousel from '@/components/customCarrousel.vue'
-import UserPanel from '@/components/customUserPanel.vue'
-import Notifications from '@/components/customNotifications.vue'
+import UserPanel from '@/components/UserPanelCompose.vue.js'
+import Notifications from '@/components/NotificationsCompose.vue.js'
 import NavbarOptions from '@/components/NavbarOptions.vue'
 import ButtonsCompose from '@/components/ButtonsCompose.vue'
 import BannerButtons from '@/components/BannerButtons.vue'

@@ -18,8 +18,8 @@
 
 <script>
 import Carrousel from '@/components/customCarrousel.vue'
-import UserPanel from '@/components/customUserPanel.vue'
-import Notifications from '@/components/customNotifications.vue'
+import UserPanel from '@/components/UserPanelCompose.vue.js'
+import Notifications from '@/components/NotificationsCompose.vue.js'
 import NavbarOptionsVue from '@/components/NavbarOptions.vue'
 
 export default {

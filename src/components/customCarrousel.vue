@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Frame from '@/components/customFrame.vue'
+import Frame from '@/components/FrameCompose.vue.js'
 export default {
     data() {
         return {

@@ -2,7 +2,7 @@
     <div class="container bg-lockwood">
         
         <!--NAVBAR-->
-        <div class="nav-container fixed">
+        <nav class="nav-container fixed">
             <h4 class="text-primary text-3xl font-semibold my-4 mx-[50px] hover:cursor-pointer">FireFlix</h4>
             <Router-Link to="/" class="mr-[19px] text-sm font-semibold text-terciary">Inicio</Router-Link>
             <Router-Link to="/admin/series" class="mr-[19px] text-sm font-semibold text-terciary hover:text-gray">Series</Router-Link>
@@ -14,12 +14,11 @@
                 <input v-if="show" class="search-bar px-[20px] py-[6px] bg-transparent ml-[860px] border-solid border-white border-[1px] text-[14px]" placeholder="Títulos, personas, géneros">
             </Transition>
 
-            
             <Router-Link to="/" class="ml-[20px] text-sm font-[550] text-terciary">Niños</Router-Link>
             <img @mouseover="showNotifications = true"  @mouseleave="showNotifications = false" class="notification-icon w-6 ml-[20px] hover:cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/472/472371.png" />
             <img @mouseover="showPanel = true" @mouseleave="showPanel = false" class="user-icon w-8 ml-[20px] hover:cursor-pointer"
                 src="https://wallpapers.com/images/hd/netflix-profile-pictures-5yup5hd2i60x7ew3.jpg" />
-        </div>
+        </nav>
         <!--NOTIFICATIONS-->
         <Notifications v-if="showNotifications"></Notifications>
 
@@ -44,8 +43,8 @@
 
 <script>
 import Carrousel from '@/components/customCarrousel.vue'
-import UserPanel from '@/components/customUserPanel.vue'
-import Notifications from '@/components/customNotifications.vue'
+import UserPanel from '@/components/UserPanelCompose.vue.js'
+import Notifications from '@/components/NotificationsCompose.vue.js'
 
 export default{
     data(){
